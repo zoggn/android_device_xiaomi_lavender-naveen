@@ -626,4 +626,8 @@
 
     <!-- Whether to enable smart clock feature -->
     <bool name="config_enableSmartClock">true</bool>
+
+    <!-- Whether device ignores the RSSNR signal implementation -->
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>
+
 </resources>
