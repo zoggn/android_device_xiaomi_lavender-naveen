@@ -22,10 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common RR stuff.
+$(call inherit-product, vendor/rr/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_lavender
+PRODUCT_NAME := rr_lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
@@ -45,11 +45,3 @@ TARGET_VENDOR := Xiaomi
 # Use Jelly
 TARGET_USE_JELLY := true
 
-# Set this flag in build script
-ifeq ($(CURRENT_BUILD_TYPE), gapps)
-# Use Gapps
-TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
-WITH_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-endif

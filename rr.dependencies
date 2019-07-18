@@ -1,0 +1,21 @@
+[
+   {
+      "remote":"github",
+      "repository":"BeastRoms-Devices/kernel_xiaomi_lavender",
+      "target_path":"kernel/xiaomi/lavender",
+      "branch":"pie-clang"
+   },
+   {
+      "remote":"github",
+      "repository":"thephotogenicbug/vendor_xiaomi_lavender",
+      "target_path":"vendor/xiaomi/lavender",
+      "branch":"rr-pie"
+   },
+   {
+      "remote":"github",
+      "repository":"LineageOS/android_packages_resources_devicesettings",
+      "target_path":"packages/resources/devicesettings",
+      "branch":"lineage-16.0"
+   }
+ }
+]
