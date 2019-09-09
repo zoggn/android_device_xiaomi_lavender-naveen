@@ -12,8 +12,7 @@ LOCAL_SHARED_LIBRARIES := \
     libdl \
     libutils \
     libcutils \
-    liblog \
-    libprocessgroup
+    liblog
 
 LOCAL_SRC_FILES += \
     loc_log.cpp \
