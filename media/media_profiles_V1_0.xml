@@ -845,7 +845,6 @@
              sampleRate="8000"
              channels="1" />
     </EncoderProfile>
->>>>>>> 3738a53... lavender: media: Enable 4k video rec on front cam
 
     <CamcorderProfiles cameraId="1">
 
