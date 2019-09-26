@@ -17,10 +17,10 @@
 $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 
 # Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
@@ -33,7 +33,7 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-pe
 
 # RRO
 PRODUCT_ENFORCE_RRO_TARGETS := \
@@ -267,7 +267,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
-	
+
 # IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
