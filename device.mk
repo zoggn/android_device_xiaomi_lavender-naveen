@@ -483,3 +483,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl \
     libwfdaac
+
+# Wallpapers
+PRODUCT_PACKAGES += \
+    WallpapersBReel2018
