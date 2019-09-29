@@ -199,19 +199,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
 	android.hardware.drm@1.2-service.clearkey
 
-# Exclude TOF sensor from InputManager
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
-
-# FBE support
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/bin/init.qti.qseecomd.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.qseecomd.sh
-
-# For android_filesystem_config.h
-PRODUCT_PACKAGES += \
-    fs_config_files
->>>>>>> db003366... lavender: Uprev clearkey to 1.2
-
 # Fingerprint feature
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_lavender
