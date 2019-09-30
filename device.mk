@@ -189,15 +189,15 @@ PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
     android.hardware.broadcastradio@1.0-impl
 
-# Device-specific settings
+# Doze
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.2-service.clearkey
+	android.hardware.drm@1.2-service.clearkey
 
 # Fingerprint feature
 PRODUCT_PACKAGES += \
@@ -483,3 +483,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl \
     libwfdaac
+
+# Wallpapers
+PRODUCT_PACKAGES += \
+    WallpapersBReel2018
