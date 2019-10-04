@@ -22,3 +22,6 @@ type debugfs_wlan, debugfs_type, fs_type;
 
 # Firmware
 type bt_firmware_file, file_type;
+
+# Dsp
+type dsp_file, file_type;
